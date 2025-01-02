@@ -1,8 +1,8 @@
 # fsPurge
 
-> A powerful, safe, and thorough application removal tool for macOS
+> A powerful multi purpose cleaning and scanning tool for mac
 
-fsPurge is an advanced system utility designed to help users completely remove applications and their associated files from macOS systems. Unlike traditional uninstallers, fsPurge performs deep system scans to identify and remove all traces of an application, including preferences, caches, and hidden files.
+fsPurge is a tool designed to help users completely remove applications and their associated files from mac systems. fsPurge performs deep system scans to identify and remove all traces of an application, including preferences, caches, and hidden files.
 
 ## 🌟 Features
 
