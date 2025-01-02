@@ -41,7 +41,6 @@ import gc
 import psutil
 
 def scan_directory(args) -> Set[str]:
-    """Standalone process-safe directory scanner."""
     base_path, patterns, app_name, excluded_patterns = args
     found_files = set()
     
@@ -50,11 +49,9 @@ def scan_directory(args) -> Set[str]:
         strict_pattern = re.compile(rf".*{re.escape(app_name)}.*", re.IGNORECASE)
         loose_pattern = re.compile(rf".*{re.escape(clean_app_name)}.*", re.IGNORECASE)
         
-        # Compile excluded patterns
         excluded_regexes = [re.compile(pattern, re.IGNORECASE) for pattern in excluded_patterns]
         
         for root, dirs, files in os.walk(base_path):
-            # Skip Python virtual environments and node_modules
             if any(x in root for x in ['/venv/', '/node_modules/', '/site-packages/']):
                 continue
                 
@@ -65,11 +62,9 @@ def scan_directory(args) -> Set[str]:
             for name in itertools.chain(files, dirs):
                 full_path = os.path.join(root, name)
                 
-                # Skip if path matches any excluded pattern
                 if any(regex.search(full_path) for regex in excluded_regexes):
                     continue
                     
-                # Skip Python packages and modules
                 if ('site-packages' in full_path or 
                     full_path.endswith('.py') or 
                     '/pip/' in full_path or
