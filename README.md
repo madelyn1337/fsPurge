@@ -42,7 +42,7 @@ fsPurge is a tool designed to help users completely remove applications and thei
 
 ## 🛠️ Installation & Compiling
 
-### Run straight from python3:
+### Run using python3:
 
 Create a python virtual enviroment for ease of use (not needed but is recommended)
 
