@@ -42,20 +42,6 @@ fsPurge is a tool designed to help users completely remove applications and thei
 
 ## 🛠️ Installation & Compiling
 
-### fsPurge
-- all in 1 cli menu
-- bigger file but has all the tools in one place
-- simple compiling
-- requires more arguments
-- more time consuming but overall simpler and easier for average users.
-
-### Mini Versions
-- easier to understand and use
-- each tool does one thing only
-- less arguments needed
-- faster to use and can put into path
-- requires compiling all tools individually
-
 ### Run straight from python3:
 
 Create a python virtual enviroment for ease of use (not needed but is recommended)
