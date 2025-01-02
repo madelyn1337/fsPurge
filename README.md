@@ -40,7 +40,7 @@ fsPurge is a tool designed to help users completely remove applications and thei
 - **Compressed Storage**: Compresses backup to save more storage
 - **Metadata Tracking**: Has a lot of info on the back ups
 
-## 🛠️ How To Install and Use
+## 🛠️ Installation & Compiling
 
 ### fsPurge
 - all in 1 cli menu
@@ -49,12 +49,31 @@ fsPurge is a tool designed to help users completely remove applications and thei
 - requires more arguments
 - more time consuming but overall simpler and easier for average users.
 
-### Others
+### Mini Versions
 - easier to understand and use
 - each tool does one thing only
 - less arguments needed
 - faster to use and can put into path
 - requires compiling all tools individually
+
+### How to Compile:
+Create a python virtual enviroment for ease of use (not needed but is recommended)
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+install python requirements to compile
+
+```bash
+pip install -r requirements.txt
+```
+compile into a binary
+
+```bash
+pyinstaller --onefile --clean --name scanner fspurge_scan.py
+```
+replace scanner with whatever you want the binary name called
+replace fspurge_scan.py with whatever version you want to compile
 
 ## ⚠️ Important Notes
 
