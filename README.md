@@ -56,10 +56,39 @@ fsPurge is a tool designed to help users completely remove applications and thei
 - faster to use and can put into path
 - requires compiling all tools individually
 
-### How to Compile:
+### How to Run:
+
 Create a python virtual enviroment for ease of use (not needed but is recommended)
+
 ```bash
 python3 -m venv venv
+```
+activate virtual environment
+
+```bash
+source venv/bin/activate
+```
+install python requirements to compile
+
+```bash
+pip install -r requirements.txt
+```
+Run the app using -h for instructions
+
+```bash
+python3 fspurge.py --help
+```
+
+### How to Compile:
+
+Create a python virtual enviroment for ease of use (not needed but is recommended)
+
+```bash
+python3 -m venv venv
+```
+activate virtual environment
+
+```bash
 source venv/bin/activate
 ```
 install python requirements to compile
@@ -73,7 +102,8 @@ compile into a binary
 pyinstaller --onefile --clean --name scanner fspurge_scan.py
 ```
 replace scanner with whatever you want the binary name called
-replace fspurge_scan.py with whatever version you want to compile
+
+replace fspurge_scan.py with whatever version you want to compile, if you want the all in one just use fspurge.py
 
 ## ⚠️ Important Notes
 
