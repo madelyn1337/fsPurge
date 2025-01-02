@@ -44,7 +44,7 @@ fsPurge is a tool designed to help users completely remove applications and thei
 
 ### Download from Releases
 
-Download binary from [releases]([URL](https://github.com/madelyn1337/fsPurge/releases/tag/1.0.0))
+Download binary from [releases](https://github.com/madelyn1337/fsPurge/releases/tag/1.0.0)
 
 open terminal and give it executeable perms
 
