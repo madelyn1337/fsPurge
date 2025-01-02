@@ -78,6 +78,15 @@ Run the app using -h for instructions
 ```bash
 python3 fspurge.py --help
 ```
+or you can just execute it, first give it executeable perms (dangerous)
+
+```bash
+chmod +x fspurge.py
+```
+
+```bash
+./fspurge.py --help
+```
 
 ### How to Compile:
 
@@ -104,6 +113,18 @@ pyinstaller --onefile --clean --name scanner fspurge_scan.py
 replace scanner with whatever you want the binary name called
 
 replace fspurge_scan.py with whatever version you want to compile, if you want the all in one just use fspurge.py
+
+before running it needs executeable perms (dangerous)
+
+```bash
+chmod +x scanner
+```
+
+then just run the app
+
+```bash
+./scanner --help
+```
 
 ## ⚠️ Important Notes
 
