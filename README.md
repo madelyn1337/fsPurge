@@ -42,6 +42,21 @@ fsPurge is a tool designed to help users completely remove applications and thei
 
 ## 🛠️ Installation & Compiling
 
+### Download from Releases
+
+Download binary from [releases]([URL](https://github.com/madelyn1337/fsPurge/releases/tag/1.0.0))
+
+open terminal and give it executeable perms
+
+```bash
+chmod +x fspurge
+```
+then just run the app
+
+```bash
+./fspurge -h
+```
+
 ### Run using python3:
 
 Create a python virtual enviroment for ease of use (not needed but is recommended)
@@ -53,6 +68,11 @@ activate virtual environment
 
 ```bash
 source venv/bin/activate
+```
+git clone or download repo
+
+```bash
+git clone https://github.com/madelyn1337/fsPurge.git
 ```
 install python requirements to compile
 
@@ -86,6 +106,11 @@ activate virtual environment
 
 ```bash
 source venv/bin/activate
+```
+git clone or download repo
+
+```bash
+git clone https://github.com/madelyn1337/fsPurge.git
 ```
 install python requirements to compile
 
